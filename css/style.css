@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --primary: hsl(171, 66%, 44%);
+  --secondary: hsl(233, 100%, 69%);
+  --gray-blue: hsl(201, 11%, 66%);
+  --white: #fff;
+  --gray: hsl(210, 10%, 33%);
+  --cf-paragraph: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--gray);
+}
+
+/* Start global rules */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screen (default for mobile) */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium screen (tablets and small laptops) */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large screen (desktops) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+.heading{
+width:90%;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 38px;
+}
+.heading h2 {
+color:var(--gray);
+margin-bottom: 15px;
+font-size: 35px ;
+}
+.heading p {
+  color: var(--gray);
+}
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  header .container,
+  .info .container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  }
+  header .container img{
+  
+  width: 100px;
+  align-self: center;
+  }
+  header .container h1,
+  .info  .container h1{
+  
+font-size: 45px;
+color: var(--gray);
+  }
+  
+  header .container .actions,
+  .info .container .actions{
+
+width:60%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+  }
+  header .container .actions .btn,
+  .info .container .actions .btn{
+width: 46%;
+border: none;
+padding: 20px;
+border-radius: 30px;
+color: black;
+transition: 0.5s;
+cursor: pointer;
+margin-bottom: 15px;
+}
+
+header .container .actions .btn:hover,
+.info .container .actions .btn:hover{
+transform: scale(1.1);
+}
+
+header .container .actions .btn-ios,
+.info .container .actions .btn-ios {
+
+background-color:var(--primary);
+box-shadow: 5px var(--primary);
+}
+header .container .actions .btn-mac,
+.info .container .actions .btn-mac{
+background-color: var(--secondary);
+box-shadow: 5px 5px 5px var(--secondary);
+}
+.snippets {
+  padding: 50px 0;
+  }
+  .snippets .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .snippets .image{
+  width: 50%;
+  height: 500px;
+  }
+  .snippets .image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    position: relative;
+    left: -20px;
+  }
+    .snippets .text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    }
+    .snippets .text li {
+    padding-right: 15px;
+    margin-bottom: 25px;
+    }
+    .snippets text h3 {
+      color: var(--primary);
+    }
+    .snippets .text p {
+      color: var(--gray);
+    }
+    .gallery {
+      padding: 50px 0;
+    }
+    .gallery .image{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+    }
+    .gallery .image img{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+    }
+    @media (max-width:  767px) {
+      .gallery.image{
+        width: 350px;
+      }
+      
+    }
+
+  .workflow {
+    padding: 50px;
+    }
+    .workflow .container {
+       display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    flex-wrap: wrap;
+    }
+    .workflow .container .box {
+      text-align: center;
+      width: 300px;
+      height: 250px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+     }
+     .workflow .container .box img {
+    height: 40;
+     }
+     .workflow .container .box h3{
+      color: var(--gray);
+     }
+     .workflow .container .box p{
+      height: 40%;
+     }
+  
+     .branda {
+  padding: 50px 0;
+     }
+     .brands .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      }
+      .brands .container img {
+      width: 170px;
+      max-width: 100%;
+      }
+  .info {
+  padding:50px 0;
+  height: 350px;
+  
+  }
+  footer {
+    background-color: gainsboro;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer .container img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  footer .container .links {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  footer .container .social {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+  }
+  footer .container .links li{
+    width: fit-content;
+  }
+  footer .container .links a {
+    color: var(--gray);
+    margin: 15px 0;
+  }
+  
