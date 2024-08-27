@@ -100,7 +100,7 @@ font-size: 35px ;
 font-size: 35px;
 color: var(--gray);
  header .container p,
- .info .container p,{
+ .info .container p{
      font-size: 40px;
 
     color: var(--cf-paragraph);
