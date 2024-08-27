@@ -14,7 +14,6 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-family: "Bai Jamjuree", sans-serif;
 }
 
 ul {
@@ -26,8 +25,7 @@ a {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--gray);
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 /* Start global rules */
@@ -115,7 +113,7 @@ width: 46%;
 border: none;
 padding: 20px;
 border-radius: 30px;
-color: black;
+color: white;
 transition: 0.5s;
 cursor: pointer;
 margin-bottom: 15px;
