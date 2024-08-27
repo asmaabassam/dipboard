@@ -128,9 +128,9 @@ color: var(--gray-blue);
 
   header .container .actions .btn,
   .info  .container .actions .btn{
-width: 46%;
+width: 40%;
 border: none;
-padding: 20px;
+padding: 10px;
 border-radius: 30px;
 color: black;
 transition: 0.5s;
@@ -145,11 +145,10 @@ transform: scale(1.1);
 
 header .container .actions .btn-ios,
 .info .container .actions .btn-ios {
-
+  size: 10cm;
 background-color:var(--primary);
-box-shadow:  var(--primary);
-  font-size: 20px;
-
+box-shadow: var(--primary);
+font-size: 20px;
 }
 header .container .actions .btn-mac,
 .info .container .actions .btn-mac{
