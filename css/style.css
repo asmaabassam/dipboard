@@ -99,6 +99,8 @@ font-size: 35px ;
   .info .container h1{
 font-size: 35px;
 color: var(--gray);
+    top: 40px;
+
   }  
  header .container p,
  .info .container p{
