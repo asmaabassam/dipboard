@@ -95,11 +95,11 @@ header {
 
   }
   header .container h1,
-  .info .container h1,{
+  .info .container h1{
 font-size: 45px;
 color: var(--gray);
   }
-  header .container .actions
+  header .container .actions,
   .info  .container .actions{
 width:60%;
 margin: 0 auto;
@@ -107,7 +107,20 @@ display: flex;
 justify-content: space-between;
 align-item: center;
   }
-  header .container .actions .btn{
+header .container p,
+.info .container p {
+
+width: 70%;
+
+margin: 0 auto;
+
+color: var(--gray-blue);
+
+}
+
+
+  header .container .actions .btn,
+  .info  .container .actions .btn{
 width: 46%;
 border: none;
 padding: 20px;
