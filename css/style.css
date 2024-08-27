@@ -69,7 +69,7 @@ margin-bottom: 15px;
 font-size: 35px ;
 }
 .heading p {
-  color: var(--gray);
+  color: var(--cf-paragraph);
 }
 }
 header {
