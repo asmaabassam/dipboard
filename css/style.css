@@ -235,6 +235,7 @@ box-shadow: 5px 5px 5px var(--secondary);
      }
      .workflow .container .box p{
       height: 40%;
+        color: var(--gray-blue); 
      }
   
      .branda {
