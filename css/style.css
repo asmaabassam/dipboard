@@ -99,6 +99,8 @@ header {
   }
   header .container h1,
   .info .container h1{
+     margin-bottom: 2rem;
+  margin-top: 2rem;
 font-size: 45px;
 color: var(--gray);
   }
@@ -112,9 +114,8 @@ align-item: center;
   }
 header .container p,
 .info .container p {
-
-width: 70%;
-margin: 0 auto;
+ margin-bottom: 2rem;
+  margin-top: 2rem;
 
 color: var(--gray-blue);
 
