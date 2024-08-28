@@ -115,21 +115,17 @@ align-item: center;
   }
   header .container .actions .btn,
   .info  .container .actions .btn{
-width: 40%;
-border: none;
-padding: 10px;
-border-radius: 30px;
-color: black;
-transition: 0.5s;
-cursor: pointer;
-margin-bottom: 15px;
-font-size: small;
-   
+ padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 header .container .actions .btn:hover,
 .info .container .actions .btn:hover{
-transform: scale(1.1);
+  opacity: 0.9;
 }
 
 header .container .actions .btn-ios,
@@ -144,7 +140,6 @@ header .container .actions .btn-mac,
 background-color: var(--secondary);
 box-shadow: (--secondary);
   font-size: 20px;
-
 }
 .snippets {
   padding: 50px 0;
