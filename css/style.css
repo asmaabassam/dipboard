@@ -24,7 +24,6 @@ ul {
 a {
   text-decoration: none;
 }
-/* Start global rules */
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -32,25 +31,12 @@ a {
   margin-right: auto;
 }
 
-/* Small screen (default for mobile) */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
 
-/* Medium screen (tablets and small laptops) */
-@media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
 
-/* Large screen (desktops) */
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 .heading{
 width:90%;
 text-align: center;
