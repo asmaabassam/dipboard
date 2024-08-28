@@ -1,287 +1,203 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
-:root {
-  --primary: hsl(171, 66%, 44%);
-  --secondary: hsl(233, 100%, 69%);
-  --gray-blue: hsl(201, 11%, 66%);
-  --white: #fff;
-  --gray: hsl(210, 10%, 33%);
-  --cf-paragraph: hsl(201, 11%, 66%);
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-family: "Bai Jamjuree", sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+  margin: 0;
+  --text-gray: hsl(201, 11%, 66%);
+  --head-gray: hsl(210, 10%, 33%);
+  --btn-cyan: hsl(171, 66%, 44%);
+  --btn-blue: hsl(233, 100%, 69%);
 }
 
 body {
-  background-color: var(--white);
-  color: var(--gray);
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.heading{
-width:90%;
-text-align: center;
-margin: 0 auto;
-margin-bottom: 38px;
-}
-.heading h2 {
-color:var(--gray);
-margin-bottom: 15px;
-font-size: 35px ;
-}
-.heading p {
-  color: var(--gray);
-}
-  header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/bg-header-desktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  header .container,
-  .info .container {
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  header .container p,
-  .info .container p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: medium;
-    color: var(--gray-blue);
-  }
-  
-  header .container h1,
-  .info  .container h1{
-      color: var(--gray);
-    }
-    header .container p,
-    .info .container p {
-      color: var(--cf-paragraph);
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 40px;
-    }
-    
-    header .container .actions,
-    .info .container .actions {
-      width: 60%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; 
-    }
-    
-    header .container .actions .btn,
-    .info .container .actions .btn {
-      padding: 15px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-          width: 42%;
-  
-    }
-    
-    header .container .actions .btn:hover,
-    .info .container .actions .btn:hover {
-      opacity: 0.9;
-      transform: scale(1.1);
-  
-    }
-    
-    header .container .actions .btn-ios,
-    .info .container .actions .btn-ios {
-      background-color: var(--primary);
-      font-size: 20px;
-    }
-    
-    header .container .actions .btn-mac,
-    .info .container .actions .btn-mac {
-      background-color: var(--secondary);
-      font-size: 20px;
-    }
-    .snippets {
-      padding: 50px 0;
-      }
-      .snippets .row {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      }
-      .snippets .image{
-      width: 50%;
-      height: 500px;
-      }
-      .snippets .image img {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        object-fit: contain;
-        position: relative;
-        left: -20px;
-      }
-        .snippets .text {
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        }
-        .snippets .text li {
-        padding-right: 15px;
-        margin-bottom: 25px;
-        }
-        .snippets text h3 {
-          color: var(--primary);
-        }
-        .snippets .text p {
-          color: var(--gray);
-        }
-    .gallery {
-      padding: 50px 0;
-    }
-    .gallery .image{
-   width: 800px;
-  height: 500px;
-  margin: 0 auto;
-  text-align: center;
-    }
-    .gallery .image img{
   width: 100%;
-  max-width: 100%;
-  text-align: center;
-    }
-    @media (max-width:  767px) {
-      .gallery.image{
-        width: 350px;
-      }
-      
-    }
+  overflow-x: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+}
 
-  .workflow {
-    padding: 50px;
-    }
-    .workflow .container {
-       display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    flex-wrap: wrap;
-    }
-    .workflow .container .box {
-      text-align: center;
-      width: 300px;
-      height: 250px;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-between;
-     }
-     .workflow .container .box img {
-    height: 40;
-     }
-     .workflow .container .box h3{
-      color: var(--gray);
-     }
-     .workflow .container .box p{
-      height: 40%;
-        color: var(--gray-blue); 
-     }
-  
-     .branda {
-  padding: 50px 0;
-     }
-     .brands .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      }
-      .brands .container img {
-      width: 170px;
-      max-width: 100%;
-      }
-  .info {
-  padding:50px 0;
-  height: 350px;
-  
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 100%;
+}
+header img {
+  padding-bottom: 70px;
+}
+
+section {
+  margin: 12px auto;
+}
+
+h2 {
+  color: var(--head-gray);
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--head-gray);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: var(--head-gray);
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  color: var(--text-gray);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#section1,
+#section6 {
+  padding: 0 20px;
+}
+
+#section1 div,
+#section6 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+    justify-content: center;
   }
-  footer {
-  background-color: gainsboro;
-    padding: 40px 0;
+
+  #section1 button,
+  #section6 button {
+    width: 30%;
   }
-  
-  footer .container {
-    display: flex;
+
+  #section2 {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+
+  #section2 > div:first-of-type {
+    max-width: 650px;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  #section2 > div:last-of-type {
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  #section2 img {
+    height: 420px;
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  #section2 > div:last-of-type > div:last-of-type {
+    width: 38%;
+  }
+
+  .snippets h4,
+  .snippets p {
+    text-align: left;
+    padding: 0;
+  }
+
+  #section3 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+
+  #section3 img {
+    margin-top: 40px;
+    height: 410px;
+    width: 100%;
+  }
+
+  #section4 > div {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #section4 .workflow {
+    margin-bottom: 13px;
+  }
+
+  #section5 {
+    max-width: 1000px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 0;
+    margin: 90px auto 0;
   }
-  
-  footer img {
-    height: 50px; 
+
+  #section6 {
+    margin-top: 130px;
   }
-  
-  footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+
+  footer {
+    padding-top: 20px;
   }
-  
-  footer ul.links li {
-    margin-right: 20px;
+
+  #section7 {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-  
-  footer ul.links li a {
+
+  #section7 > div {
+    align-items: center;
+  }
+
+  #section7 > nav > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 70px;
+    row-gap: 20px;
+  }
+  #section7 > nav > ul li a {
+    text-align: left;
     text-decoration: none;
-    color: var(--gray); 
-    font-size: 16px;
-    transition: color 0.3s;
+    display: block;
+    color: var(--head-gray);
   }
-  
-  footer ul.links li a:hover {
-    color: var(--gray); 
-  }
-  
-  footer ul.social {
+
+  #section7 > ul {
+    list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
   }
-  
-  footer ul.social li {
-    margin-left: 10px;
+
+  #section7 > ul img {
+    width: 28px;
+    height: 28px;
   }
-  
-  footer ul.social li a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-  }
-  
-  footer ul.social li a img {
-    width: 100%;
-    height: 100%;
-  }
-  
+}
+
+#section1 > div button:hover,
+#section6 > div button:hover {
+  cursor: pointer;
+}
+
+#section7 ul > li > a:hover {
+  color: var(--btn-cyan);
+}
