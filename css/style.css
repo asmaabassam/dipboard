@@ -128,11 +128,15 @@ font-size: 35px ;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+        width: 42%;
+
   }
   
   header .container .actions .btn:hover,
   .info .container .actions .btn:hover {
     opacity: 0.9;
+    transform: scale(1.1);
+
   }
   
   header .container .actions .btn-ios,
