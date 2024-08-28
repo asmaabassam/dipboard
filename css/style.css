@@ -81,6 +81,14 @@ body {
     background-position: center;
     background-size: cover;
     }
+header .container p,
+.info .container p {
+ margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: medium;
+color: var(--gray-blue);
+
+}
   header .container,
  .info  .container {
  text-align: center;
