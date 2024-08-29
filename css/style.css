@@ -219,69 +219,8 @@ font-size: 35px ;
       width: 170px;
       max-width: 100%;
       }
-  }
- section.info {
-      padding: 40px 0;
-      background-color: var(--white);
-      text-align: center;
-      font-family: Arial, sans-serif;
-  }
-  section.info h1 {
-      font-size: 30px;
-      color: var(--gray);
-      margin-bottom: 10px;
-  }
-  
-  section.info p {
-      font-size: 20px;
-      color: var(--gray-blue);
-      margin-bottom: 20px;
-      line-height: 1.6;
-  }
-
-  section.info .actions {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-  }
-  section.info .btn.btn-ios {
-      background-color: var(--primary);
-      color: var(--white);
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
-
-  section.info .btn.btn-mac {
-      background-color: var(--secondary);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
-
-  header .container .actions .btn{
-    padding: 15px 15px;
-    font-size: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-        width: 42%;
-        vertical-align: top 200px;
-  }
-  section.info .btn:hover {
-      background-color: var(--secondary);
-      opacity: 0.9;
-      transform: scale(1.1);
-  
-  }
-
-   footer {
+ vgbhjnkhg f cv
+  footer {
   background-color: gainsboro;
     padding: 40px 0;
   }
