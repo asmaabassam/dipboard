@@ -58,14 +58,12 @@ font-size: 35px ;
     background-size: cover;
   }
   
-  header .container,
-  .info .container {
+  header .container {
     text-align: center;
     padding: 100px 0;
   }
   
-  header .container p,
-  .info .container p {
+  header .container p{
     margin-bottom: 2rem;
     margin-top: 2rem;
     font-size: 30px;
@@ -73,21 +71,18 @@ font-size: 35px ;
     
   }
   
-  header .container h1,
-  .info  .container h1{
+  header .container h1{
       color: var(--gray);
           font-size: 2.5rem;
     }
-    header .container p,
-    .info .container p {
+    header .container p{
       color: var(--cf-paragraph);
       font-size: 18px;
       line-height: 1.5;
       margin-bottom: 40px;
     }
     
-    header .container .actions,
-    .info .container .actions {
+    header .container .actions{
       width: 60%;
       margin: 0 auto;
       display: flex;
@@ -95,8 +90,7 @@ font-size: 35px ;
       align-items: center; 
     }
     
-    header .container .actions .btn,
-    .info .container .actions .btn {
+    header .container .actions .btn{
       padding: 15px 30px;
       font-size: 16px;
       border: none;
@@ -107,21 +101,18 @@ font-size: 35px ;
   
     }
     
-    header .container .actions .btn:hover,
-    .info .container .actions .btn:hover {
+    header .container .actions .btn:hover{
       opacity: 0.9;
       transform: scale(1.1);
   
     }
     
-    header .container .actions .btn-ios,
-    .info .container .actions .btn-ios {
+    header .container .actions .btn-ios{
       background-color: var(--primary);
       font-size: 20px;
     }
     
-    header .container .actions .btn-mac,
-    .info .container .actions .btn-mac {
+    header .container .actions .btn-mac{
       background-color: var(--secondary);
       font-size: 20px;
     }
@@ -228,9 +219,65 @@ font-size: 35px ;
       width: 170px;
       max-width: 100%;
       }
-  .info {
-  padding:50px 0;
-  height: 350px;
+  }
+ section.info {
+      padding: 40px 0;
+      background-color: var(--white);
+      text-align: center;
+      font-family: Arial, sans-serif;
+  }
+  section.info h1 {
+      font-size: 30px;
+      color: var(--gray);
+      margin-bottom: 10px;
+  }
+  
+  section.info p {
+      font-size: 20px;
+      color: var(--gray-blue);
+      margin-bottom: 20px;
+      line-height: 1.6;
+  }
+
+  section.info .actions {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  section.info .btn.btn-ios {
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  section.info .btn.btn-mac {
+      background-color: var(--secondary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  header .container .actions .btn{
+    padding: 15px 15px;
+    font-size: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+        width: 42%;
+        vertical-align: top 200px;
+  }
+  section.info .btn:hover {
+      background-color: var(--secondary);
+      opacity: 0.9;
+      transform: scale(1.1);
   
   }
 
