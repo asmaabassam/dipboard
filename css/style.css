@@ -88,7 +88,6 @@ font-size: 35px ;
     
     header .container .actions,
     .info .container .actions {
-      .download {
       width: 60%;
       margin: 0 auto;
       display: flex;
